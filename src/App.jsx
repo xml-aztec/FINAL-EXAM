@@ -9,7 +9,6 @@ function App() {
     <div className="w-full min-h-screen flex flex-col bg-gray-900 text-white">
       <header className="w-full py-4 px-6 bg-gray-800 text-white shadow-md">
         <div className="container mx-auto">
-          <h1 className="text-2xl font-bold">Приложение авторизации</h1>
         </div>
       </header>
       

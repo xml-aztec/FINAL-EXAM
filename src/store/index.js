@@ -1,7 +1,12 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-import rootReducer from './slices';
+import loginFormReducer from './slices/loginFormSlice';
+
+// Объединяем редьюсеры здесь вместо импорта из slices/index.js
+const rootReducer = combineReducers({
+  loginForm: loginFormReducer,
+});
 
 const persistConfig = {
   key: 'root',
